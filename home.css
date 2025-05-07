@@ -1,0 +1,613 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #E8E6FF;
+  color: #222;
+}
+
+header {
+  background: #ffffff;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  font-size: 1.3rem;
+}
+
+.logo-img {
+  max-height: 70px;
+  height: auto;
+}
+
+header .nav-container {
+  flex-grow: 1; /* Faz o contêiner ocupar o espaço disponível */
+  display: flex;
+  justify-content: center; /* Centraliza os links */
+  margin-left: -130px;
+}
+
+header nav {
+  display: flex; /* Flex para alinhar os links */
+}
+
+header nav a {
+  margin: 0 13px;
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
+.btn-acessar {
+  background: #ffd369;
+  border: none;
+  padding: 15px 25px;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: auto; /* Alinha o botão à direita */
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1000px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  background-color: #ffd369;
+  padding: 0.6rem 1.2rem;
+  border-radius: 999px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #3D2F1E;
+  margin-left: 330px;
+}
+
+.badge svg {
+  margin-right: 0.6rem;
+  width: 20px;
+  height: 20px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  width: 100%;
+  margin-left: 370px;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza horizontalmente o conteúdo */
+  max-width: 500px;
+  text-align: center; /* Centraliza o texto */
+}
+
+.description {
+  font-size: 0.9rem;
+  color: #3d3d3d;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  font-weight: 500;
+  margin-top: 10px;
+}
+
+.button {
+  background-color: #ffd369;
+  border: none;
+  border-radius: 999px;
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  color: #3D2F1E;
+  transition: background-color 0.3s;
+  align-self: center; /* Garante que o botão fique centralizado */
+}
+
+.button:hover {
+  background-color: #ddc793;
+}
+
+.separator {
+  width: 2px;
+  height: 140px;
+  background-color: #000;
+}
+
+.right {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.3;
+}
+.btn-destaque {
+  background: #ffd369;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.vantagens {
+  padding: 40px 20px;
+  background: #E8E6FF;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Chau Philomene', sans-serif; /* Altera a fonte do h2 */
+  font-size: 2.6rem;
+}
+
+.vantagens p {
+  font-family: 'Inria Serif', serif; /* Altera a fonte do p dentro da seção vantagens */
+  font-size: 1.2rem;
+}
+
+
+/* Estilo para os cards */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px; /* Espaçamento entre os cards */
+  padding: 20px;
+}
+
+.card {
+  background-color: #f9f9f9; /* Cor de fundo do card */
+  border-radius: 15px; /* Bordas arredondadas */
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+.card h3 {
+  margin: 10px 0 5px; /* Margem do título */
+}
+.card p {
+  font-size: 14px; /* Tamanho da fonte do texto */
+  color: #555; /* Cor do texto */
+}
+
+/* Estilo para o fundo redondo com imagens */
+.card::before {
+  content: '';
+  display: block;
+  width: 60px; /* Largura do fundo redondo */
+  height: 60px; /* Altura do fundo redondo */
+  border-radius: 50%; /* Bordas arredondadas */
+  margin: 0 auto 10px; /* Centraliza e dá espaço abaixo */
+  background-size: cover; /* Ajusta a imagem para cobrir o fundo */
+  background-position: center; /* Centraliza a imagem */
+}
+ /* Exemplo de classes para imagens de fundo */
+ .card.icon1::before {
+  background-image: url('lupa.png'); /* Substitua pelo link da imagem */
+}
+
+.card.icon2::before {
+  background-image: url('cerebro.png'); /* Substitua pelo link da imagem */
+}
+
+.card.icon3::before {
+  background-image: url('pasta.png'); /* Substitua pelo link da imagem */
+}
+ /* Exemplo de classes para imagens de fundo */
+ .card.icon4::before {
+  background-image: url('progresso.png'); /* Substitua pelo link da imagem */
+}
+
+.card.icon5::before {
+  background-image: url('livros.png'); /* Substitua pelo link da imagem */
+}
+
+.card.icon6::before {
+  background-image: url('alvo.png'); /* Substitua pelo link da imagem */
+}
+
+.planos-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 3rem;
+  flex-wrap: nowrap;
+  overflow-x: auto; /* adiciona rolagem horizontal caso a tela seja menor */
+}
+
+.cards-planos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.titulos-planos {
+  margin-left: 250px;
+}
+
+.titulo-plano {
+  margin-left: 260px;
+}
+
+.plano {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: left; /* alinha os textos à esquerda */
+}
+.plano h3,
+.plano p {
+  text-align: left;
+}
+.planos-header h2,
+.planos-header p {
+  margin-left: -1400px;
+}
+.plano:hover {
+  transform: translateY(-5px);
+}
+
+.plano h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.plano .sub {
+  font-size: 0.85rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.preco {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.preco span {
+  font-weight: normal;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+ul li b {
+  font-weight: 600;
+}
+
+.desativado {
+  color: #aaa;
+  text-decoration: line-through;
+}
+.plano button {
+  margin-top: auto; /* empurra o botão para o final */
+}
+
+button {
+  background-color: #f1e2c6;
+  color: #222;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #e5d8bf;
+}
+
+.contato {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.contato h2 {
+  color: #00C6D8;
+  font-size: 43px;
+  margin-bottom: 5px;
+}
+
+.subtitulo {
+  color: #333;
+  font-size: 22px;
+  margin-bottom: 16px;
+}
+
+.linha {
+  width: 550px;
+  height: 3px;
+  background-color: #222;
+  margin: 10px auto 30px;
+}
+
+.contato-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 900px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.formulario textarea {
+  height: 120px; /* Altura fixa */
+  resize: none;  /* Impede o redimensionamento manual */
+}
+
+.formulario {
+  flex: 1;
+  min-width: 250px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 19.6px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.formulario button {
+  padding: 10px;
+  background-color: #A5F0FA;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.formulario button:hover {
+  background-color: #7cdde9;
+}
+
+.info-contato {
+  flex: 1;
+  min-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.info-box {
+  background-color: #A5F0FA;
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-align: left;
+}
+
+.info-box span {
+  font-size: 24px;
+}
+
+.info-box strong {
+  display: block;
+  font-size: 16px;
+}
+
+.info-box p {
+  margin: 2px 0 0;
+  font-size: 14px;
+}
+
+.icon-foto {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 15px;
+}
+
+.footer {
+  background-color: #EAE8F6;
+  padding: 40px 20px;
+  font-family: 'Inter', sans-serif;
+  color: #222;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  margin-left: 130px;
+}
+
+.footer-logo h2 {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+
+.slogan {
+  display: inline-block;
+  background-color: #A5F0FA;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-right: 150px;
+}
+
+.footer-column h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 6px;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #222;
+  font-size: 14px;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.footer-divider {
+  border: none;
+  height: 2px;
+  background-color: #222;
+  margin: 20px 0;
+  width: 80%;
+  margin-left: 120px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  color: #444;
+}
+
+.footer-logo-img {
+  max-width: 180px;
+  height: auto;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 1024px) {
+  .container {
+    margin-left: 0;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .badge {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .titulos-planos,
+  .titulo-plano {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .planos-header h2,
+  .planos-header p {
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .footer-top,
+  .footer-divider {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .footer-links {
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  header .nav-container {
+    margin-left: 0;
+  }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header .nav-container {
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .planos-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contato-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-divider {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .linha {
+    width: 90%;
+  }
+}
